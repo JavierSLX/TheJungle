@@ -1,0 +1,32 @@
+<div class="backgConteiner">
+  <div>
+    <div class"col-md-12" class="contentTitle">
+     <h4>Online catalog The Jungle</h4>
+     <h2>{{title}}</h2>
+     <p>
+      Germany is in Europe one of the most competitive markets in animals. Fressnapf is with more than 700 stores marketleader in Germany and the rest of Europe. Untill 2 years ago the Zoo&Co company differentiated itself on this competing market by the central animal care and the wide range of products. 
+      <br>
+      <br>
+      The company Welke developed in 2007 together with Zoo&Co a new specialized pet store in Frankfurt. This store was elected “most innovative pet store of Germany” at the Petstorecongress.
+     </p>
+   </div>
+  </div>
+
+
+
+  <div class="row">
+   {{#each products}}
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="{{this.photo}}" class="img-responsive" alt="{{this.name}}">
+        <div class="caption">
+          <h3>{{this.name}}</h3>
+          <p>{{this.description}}</p>
+          <p>Stock: {{this.stock}}</p>
+          <p><a href="#" class="btn btn-primary" role="button">Add</a> <a href="#" class="btn btn-default" role="button">Delete</a></p>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
